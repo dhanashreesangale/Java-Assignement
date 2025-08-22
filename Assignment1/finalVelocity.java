@@ -2,21 +2,18 @@ import java.util.Scanner;
 
 public class finalVelocity {
 public static void main(String[] args) {
-double u,a,t,v,s;
-
+float u,a,t;
+double v,s;
 Scanner sc = new Scanner(System.in);
-
 System.out.println("Enter initial Velocity: ");
-u = sc.nextDouble();
+u = sc.nextFloat();
 System.out.println("Enter acceleration: ");
- a = sc.nextDouble();
+a = sc.nextFloat();
 System.out.println("Enter time: ");
- t= sc.nextDouble();
-
+t= sc.nextFloat();
 v = u+a*t;
-s = (u*t)+(a*t*t);
-
+s = u+((a*t)*2);
 System.out.println("Final velocity= " +v);
-System.out.println("Distance travelled= " +s);
+System.out.println("Distance travel= " +s);
 }
 }

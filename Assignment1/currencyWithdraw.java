@@ -4,7 +4,7 @@ public class currencyWithdraw{
 public static void main(String[] args) {
 int amount,tenRup,fiveRup,oneRup,remainder;
 Scanner sc = new Scanner(System.in);
-System.out.print("Enter the amount to withdraw: ");
+System.out.print("Enter the amount : ");
 amount = sc.nextInt();
 tenRup= amount / 10;        
 remainder = amount % 10;   

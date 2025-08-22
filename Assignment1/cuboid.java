@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 public class cuboid {
-public static void main(String[] args) {
+public static void main(String[] args)
+ {
 double l,b,h,surfaceArea,volume;
-Scanner sc = new Scanner(System.in);
-    
-System.out.println("Enter length (l): ");
+Scanner sc = new Scanner(System.in);    
+System.out.println("Enter length: ");
 l = sc.nextDouble();
-System.out.println("Enter breadth (b): ");
+System.out.println("Enter breadth: ");
 b = sc.nextDouble();
-System.out.println("Enter height (h): ");
+System.out.println("Enter height: ");
 h = sc.nextDouble();
 
 surfaceArea = 2*(l*b+l*h+b*h);

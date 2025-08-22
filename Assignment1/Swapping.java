@@ -4,9 +4,9 @@ public static void main(String args[])
 {
  int a,b;
  Scanner sc=new Scanner(System.in);
- System.out.print("Enter first number : ");
+ System.out.printf("Enter 1st number : ");
  a = sc.nextInt();
- System.out.print("Enter second number : ");
+ System.out.print("Enter 2nd number : ");
   b = sc.nextInt();
   a = a + b;
   b = a - b;

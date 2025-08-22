@@ -1,29 +1,20 @@
 import java.util.Scanner;
-
-public class EmployeeSalarySlip{
-public static void main(String[] args) {
-float da,hra,tax,totalSalary,basicSalary;
-int id;
-String name;
-
-Scanner sc=new Scanner(System.in);
-
-System.out.println("Enter employee Details :");
-System.out.println("ID :");
-id=sc.nextInt();
-System.out.println("Name :");
-name=sc.next();
-System.out.println("Basic Salary :");
-basicSalary=sc.nextFloat();
-System.out.println("DA(%) :");
-da=sc.nextFloat();
-System.out.println("HRA(%) :");
-hra=sc.nextFloat();
-System.out.println("TAX(%) :");
-tax=sc.nextFloat();
-
-totalSalary=basicSalary+((basicSalary*(da+hra-tax))/100);
-System.out.println("Total salary :"+totalSalary);
-
+public class EmployeeSalarySlip
+{
+public static void main(String[] args)
+{
+	Scanner sc=new Scanner(System.in);
+	float basicSalary;
+	double tax;
+	System.out.println("Enter salary :");
+	basicSalary=sc.nextFloat();
+	if(basicSalary<150000)
+	tax=0;
+	else if(basicSalary>150000 && basicSalary<=300000)
+	tax=(basicSalary - 150000) * 0.20;
+	else
+	tax=(150000 * 0.20) +((basicSalary- 300000) * 0.30);
+	System.out.println("tax : "+tax);
 }
 }
+
