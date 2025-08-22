@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Cylinder{
+public class CylinderVolume{
 public static void main(String[] args){
 double r,h,Volume,surfaceArea;
 
